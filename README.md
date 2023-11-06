@@ -46,7 +46,7 @@ Browse our featured property listings:
 
 ## View Live
 
-Explore the Haven real estate experience live at [https://haven.vercel.app](https://haven.vercel.app).
+Explore the Haven real estate experience live at [https://haven.vercel.app](https://haven-alpha.vercel.app).
 
 Thank you for choosing Haven for your real estate needs!
 
