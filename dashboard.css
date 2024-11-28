@@ -1,0 +1,337 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Crypto Logo Styles */
+.crypto-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    }
+    
+
+
+    /* Crypto Logo Styles */
+.admin-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+
+  
+
+    }
+    
+
+
+.welcome-message{
+    margin-top: 150px;
+}
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.top-left .search-bar {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.notification {
+    position: relative;
+}
+
+.bell-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.notification-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.notification-menu p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.notification:hover .notification-menu {
+    display: block;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+
+
+
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .top-left .search-bar {
+       display: none;
+ 
+    }
+    .h1{
+        font-size: 16px;
+    }
+
+    .profile-picture{
+        margin-left: 200px;
+        margin-top: -200px;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .top-right {
+        margin-top: 10px;
+    }
+
+
+    .bell-icon {
+        font-size: 30px;
+        margin-top: -30px;
+    }
+    
+.top-left, .top-right {
+    display: flex;
+    flex-direction: row;
+}
+
+}
+
+
+.top-left, .top-right {
+    display: flex;
+    flex-direction: column;
+}
+
+h3, h4, p {
+    margin: 5px 0;
+}
+
+.welcome-message h2 {
+    font-size: 24px;
+    margin: 20px 0;
+   
+}
+
+.account-summary {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.balance-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.trade-form{
+    width: 100%;
+}
+
+
+
+
+.message-box {
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+    background-color: #e12020;
+    padding-left:60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+
+
+    
+    margin-left: 200px;
+    z-index: 10000;
+    border-radius: 10px;
+ 
+
+}
+
+
+.trade-box {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: start;
+}
+
+
+.balance-box {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.profile-box {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+
+
+
+.balance-box h4 {
+    margin-bottom: 10px;
+}
+
+.balance-box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recent-trades {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.recent-trades table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-trades th, .recent-trades td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.recent-trades th {
+    background-color: #333;
+}
+
+.recent-trades tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+@media (max-width: 768px) {
+    .dashboard .top, .balance-boxes {
+        flex-direction: column;
+    }
+
+    .balance-box {
+        margin-bottom: 20px;
+    }
+
+    .recent-trades table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    
+.message-box {
+
+display:none !important;
+ 
+}
+}
+
+
+
+
+
+
+
+
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 70%; /* 50% + 20% shift to the right */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-alert-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: black; /* Set text color to black */
+    top: 25%; /* Moves the alert down 50% from the top */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.custom-alert-content p {
+    margin: 0;
+    font-size: 16px;
+    color: black; /* Ensure the paragraph text is black */
+}
+
