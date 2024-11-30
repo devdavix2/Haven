@@ -53,6 +53,13 @@
   .message-actions button {
     margin-left: 10px;
   }
+  /* Target the last column in the table */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .transactions-table th:last-child, 
+  .transactions-table td:last-child {
+    display: none;
+  }
+}
 </style>
 
 <body>

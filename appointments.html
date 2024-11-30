@@ -21,6 +21,34 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+  .appointment-status {
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.status-confirmed {
+  color: #fff;
+  background-color: #28a745; /* Green */
+}
+
+.status-pending {
+  color: #fff;
+  background-color: #ffc107; /* Yellow */
+}
+
+.status-canceled {
+  color: #fff;
+  background-color: #dc3545; /* Red */
+}
+/* Target the last column in the table */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .appointments-table th:last-child, 
+  .appointments-table td:last-child {
+    display: none;
+  }
+}
+
 </style>
 
 <body>
